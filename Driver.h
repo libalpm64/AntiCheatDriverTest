@@ -64,7 +64,6 @@ ZwQuerySystemInformation(
     _Out_opt_ PULONG ReturnLength
 );
 
-// Remove these declarations from Driver.c and keep them only here
 NTKERNELAPI VOID KeStackAttachProcess(_In_ PEPROCESS Process, _Out_ PKAPC_STATE ApcState);
 NTKERNELAPI VOID KeUnstackDetachProcess(_In_ PKAPC_STATE ApcState);
 NTKERNELAPI NTSTATUS PsLookupProcessByProcessId(_In_ HANDLE ProcessId, _Deref_out_ PEPROCESS* Process);
