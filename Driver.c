@@ -5,7 +5,6 @@
 #pragma warning(disable: 4189) 
 #pragma warning(disable: 4996)
 
-// Define WPP tracing settings
 #define WPP_CONTROL_GUIDS \
     WPP_DEFINE_CONTROL_GUID(DriverGuid,(82881111,1222,3333,4444,555555555555), \
         WPP_DEFINE_BIT(TRACE_DRIVER))
@@ -158,7 +157,7 @@ _Dispatch_type_(IRP_MJ_CLOSE) DRIVER_DISPATCH CloseDispatch;
 _Dispatch_type_(IRP_MJ_DEVICE_CONTROL) DRIVER_DISPATCH DeviceControl;
 
 PDEVICE_OBJECT g_DeviceObject = NULL;
-PVOID g_CallbackHandle = NULL; // Added missing global handle
+PVOID g_CallbackHandle = NULL;
 
 // Forward declarations so we don't get the redefintion errors.
 BOOLEAN IsWindowsProcess(PEPROCESS Process);
