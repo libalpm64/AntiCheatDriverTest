@@ -1,4 +1,6 @@
 # AntiCheatDriverTest
+<img src="https://tokei.rs/b1/github/libalpm64/AntiCheatDriverTest?category=code&style=flat" alt="Lines of Code"/>
+
 Based on the KMDFDriver Framework Expands on implementing how you would make a kernel level driver anti-cheat do certain actions.
 
 Things covered:
